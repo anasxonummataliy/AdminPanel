@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #root {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: url(./image/background.png) no-repeat center;
+            background-size: 100%;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        form {
+            width: 500px;
+            height: 410px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            border: 2px solid white;
+            padding: 20px;
+            gap: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            color: white;
+        }
+
+        div {
+            display: flex;
+            flex-direction: row;
+            padding: 10px 15px;
+            gap: 10px;
+            border-radius: 10px;
+            border: 1px solid white;
+            width: 90%;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        i {
+            color: white;
+            font-size: 20px;
+        }
+
+        label {}
+
+        input {
+            border: none;
+            outline: none;
+            padding: 0 10px;
+            background-color: transparent;
+            color: white;
+            height: 30px;
+            width: 100%;
+            font-size: 15px;
+        }
+
+        input::placeholder {
+            color: white;
+        }
+
+        input[type="submit"] {
+           border: 1px solid;
+           width: 90%;
+           border-radius: 15px;
+           height: 50px;
+           background-color: #fff;
+           color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root">
+        <form action="login">
+            <h1>Login</h1>
+            <div>
+                <input id="" type="text" placeholder="Username">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div>
+                <input id="password" type="password" placeholder="Pssword">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+                <input type="submit">
+        </form>
+    </div>
+</body>
+
+</html>
